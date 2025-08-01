@@ -25,7 +25,7 @@ macOS は Unix 系 OS と呼ばれ、Linux と兄弟のようなものなので�
 - Windows 10 バージョン 2004 以上 または Windows 11
 - macOS Catalina 以降
 
-## 環境ごとのマニュアル
+## 環境構築の手順
 
 [【Windows 版】環境構築の手順](./【Windows版】環境構築の手順.md)  
 [【Mac 版】環境構築の手順](./【Mac版】環境構築の手順.md)
