@@ -17,7 +17,7 @@ Web 開発では、Linux 系の OS を使用することが一般的です。そ
 3. 利用者が多いことが利用者を多くすることにつながる(ドキュメントや事例が豊富に生まれ、新たなツール開発でも「まずは Linux 対応しよう」となる)。
 
 そのため、この環境構築でも Linux 環境を導入しています。
-Windows では、Windows 10 以降導入された Windows Subsystem for Linux という機能を用いることで、簡単に Linux OS を導入しています。
+Windows では、Windows 10 以降導入された「Windows Subsystem for Linux（WSL）」という機能を用いることで、簡単に Linux OS を導入しています。
 macOS は Unix 系 OS と呼ばれ、Linux と兄弟のようなものなので、そのまま開発を行うことが出来ます。
 
 ## 対象 OS
