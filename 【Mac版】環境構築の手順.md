@@ -6,7 +6,7 @@
 よりリッチな環境を作りたい場合は[佐々木が普段使っている環境のマニュアル](https://github.com/philip82148/env-setup)があります。
 どちらでセットアップしてもかまいませんし、後で移行することも可能です。
 
-※佐々木のマニュアルでは VSCode の[Live Server](https://marketplace.cursorapi.com/items/?itemName=ritwickdey.LiveServer)という拡張機能のインストールについての記載がないため、[2. 拡張機能をインストールする](#2-拡張機能をインストールする)を参考に追加でインストールしてください。
+※佐々木のマニュアルでは VSCode の[Live Server](https://marketplace.cursorapi.com/items/?itemName=ritwickdey.LiveServer)という拡張機能のインストールについての記載がないため、[1. 拡張機能をインストールする](#1-拡張機能をインストールする)を参考に追加でインストールしてください。
 
 環境構築は Git、VSCode が使えれば大丈夫です。それが出来れば、このマニュアルの通りにする必要はありません。
 
@@ -18,7 +18,7 @@
 
 [参考サイト](https://qiita.com/watamura/items/51c70fbb848e5f956fd6)の「1. VSCode のサイトにアクセス」~「6. アプリケーションフォルダから VSCode を開いてください」までを参考にインストールする。
 
-#### 2. (Mac のみ)ターミナルから`code`コマンドで VSCode が起動できるようにする
+#### 2. ターミナルから`code`コマンドで VSCode が起動できるようにする
 
 [参考サイト](https://qiita.com/P-man_Brown/items/b18f31e3bb98b08ff31b)
 
@@ -34,7 +34,7 @@ Mac ではこの手順はしなくてよい。
 参考: [3.(Mac のみ)Git をインストールする](<https://github.com/philip82148/env-setup/blob/main/環境構築の手順/3.(Macのみ)Gitをインストールする.md>)
 
 [参考サイト](https://prog-8.com/docs/git-env)を参考にインストールする。  
-なお、現時点では「2. Git のインストール」まで出来ていればよく、ターミナル上で`git --version`を入力して [Enter] を押したときにバージョンが表示されれ(エラーが起こらなけれ)ばよい。
+**なお、現時点では「2. Git のインストール」まで出来ていればよい**(ターミナル上で`git --version`を入力して [Enter] を押したときにバージョンが表示されれ(エラーが起こらなけれ)ばよい)。
 
 ### 4. VSCode の設定をする
 
@@ -49,13 +49,13 @@ VSCode を開き、[公式サイト](https://learn.microsoft.com/ja-jp/power-pag
 - [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory) (Git のログを見やすくしてくれる)
 - [Live Server](https://marketplace.cursorapi.com/items/?itemName=ritwickdey.LiveServer) (HTML ページをプレビューする)
 
-### 3. ファイル保存時に自動フォーマットするようにする
+#### 2. ファイル保存時に自動フォーマットするようにする
 
 [参考サイト](https://zenn.dev/k_kazukiiiiii/articles/670ebae0005872)を参考に自動フォーマットの設定を行う。
 
-> 1. VSCode 上で[Ctrl+,]/[Command+,] -> "Format On Save"と検索してチェックを入れる。
+> 1. VSCode 上で[Command+,] -> "Format On Save"と検索してチェックを入れる。
 > 2. 続けて"Default Formatter"と検索して Prettier を選ぶ。
-> 3. [Ctrl+Shift+P]/[Command+Shift+P]->[Reload Window]を選択。
+> 3. [Command+Shift+P] -> [Reload Window]を選択。
 
 ### 5. Git の認証情報を設定する
 
@@ -65,30 +65,34 @@ VSCode を開き、[公式サイト](https://learn.microsoft.com/ja-jp/power-pag
 
 [参考サイト](https://yakiimosan.com/github-account-create/)を参考に[GitHub](https://github.co.jp/)のアカウントを作る。
 
-#### 2. コマンドラインの Git にユーザー情報を設定する
+#### 2. ターミナルを開く
+
+[公式マニュアルより](https://support.apple.com/ja-jp/guide/terminal/apd5265185d-f365-44cb-8b09-71a064a42125/mac)
+
+> Mac で、以下のいずれかの操作を行います:  
+> Dock で Launchpad のアイコン <img src="https://help.apple.com/assets/63D8162D4F5E9E311D0CFA28/63D816334F5E9E311D0CFA30/ja_JP/a1f94c9ca0de21571b88a8bf9aef36b8.png" alt="" height="30" width="30" originalimagename="SharedGlobalArt/AppIconTopic_Launchpad.png"> をクリックして、検索フィールドに「ターミナル」と入力してから、「ターミナル」をクリックします。  
+> Finder <img src="https://help.apple.com/assets/63D8162D4F5E9E311D0CFA28/63D816334F5E9E311D0CFA30/ja_JP/058e4af8e726290f491044219d2eee73.png" alt="" height="30" width="30" originalimagename="SharedGlobalArt/AppIconTopic_Finder.png"> で、「/アプリケーション/ユーティリティ」フォルダを開いてから、「ターミナル」をダブルクリックします。
+
+#### 3. コマンドラインの Git にユーザー情報を設定する
 
 [参考サイト](https://zenn.dev/sassan/articles/a1efb40422f2d7)
 
-> ターミナルを開き、下記の 2 つを実行する。  
-> ただし、ダブルクオーテーション内は自分で設定したいものにすること。  
-> なお、これらはコミットログに記録され、外部に公開される。  
-> どのようなものを設定すればいいかは参考サイトを参照。  
-> また、個人メールを外部に公開したくない場合も参考サイトを参照。
->
-> なお、ターミナルの開き方は[5.Python の環境構築をする](./5.Pythonの環境構築をする.md)等を参照。
-> もちろん WSL 上で実行する。
+> 以下の 2 つをターミナルで実行する。日本語の部分は書き換えること。  
+> **これらは外部に公開される。** それが嫌な場合は任意のメールと名前を設定してよい。  
+> メールに関しては GitHub 側が用意したダミーメールを使うこともできる。  
+> 詳しくは参考サイトを参照。
 >
 > ```shell
-> git config --global user.email "任意のメールアドレス"
+> git config --global user.email "GitHubアカウントのメールアドレス"
 > ```
 >
 > ```shell
-> git config --global user.name "任意の名前"
+> git config --global user.name "GitHubアカウントのID"
 > ```
 
-#### 3. GitHub CLI をインストールする
+#### 4. Homebrew (アプリインストーラ) をインストールする
 
-最初に[参考サイト](https://qiita.com/zaburo/items/29fe23c1ceb6056109fd)を参考に Homebrew (アプリインストーラ) をインストールする。
+[参考サイト](https://qiita.com/zaburo/items/29fe23c1ceb6056109fd)を参考に Homebrew (アプリインストーラ) をインストールする。
 
 > 下記をターミナルで実行する。画面の指示に従って[Enter]を押す。
 >
@@ -105,13 +109,15 @@ VSCode を開き、[公式サイト](https://learn.microsoft.com/ja-jp/power-pag
 > eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 > ```
 
-次にターミナルで下記を実行する。
+#### 5. Homebrew で GitHub CLI をインストールする
+
+ターミナルで下記を実行する。
 
 ```shell
 brew install gh
 ```
 
-#### 4. GitHub にログインする
+#### 6. GitHub にログインする
 
 [参考サイト](https://zenn.dev/sassan/articles/a1efb40422f2d7)  
 ※参考サイトは WSL での方法を説明しているが、Mac でも同じである。
@@ -139,7 +145,7 @@ brew install gh
 > ```
 >
 > この後 [Enter] を押す。  
-> WSL では多分ブラウザは開かれないので直接 [https://github.com/login/device](https://github.com/login/device) を開く。  
+> ブラウザが自動で開かれるはずだが、開かなかったら直接 [https://github.com/login/device](https://github.com/login/device) を開く。  
 > その後、コピーしたコードを張り付けて認証する。
 >
 > エラーが起こった時の対処法は[参考サイト](https://zenn.dev/sassan/articles/a1efb40422f2d7)を参照する。
