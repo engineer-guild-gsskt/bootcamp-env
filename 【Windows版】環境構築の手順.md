@@ -116,9 +116,9 @@ code ~
 
 [参考サイト](https://zenn.dev/k_kazukiiiiii/articles/670ebae0005872)を参考に自動フォーマットの設定を行う。
 
-> 1. VSCode 上で[Ctrl+,]/[Command+,] -> "Format On Save"と検索してチェックを入れる。
+> 1. VSCode 上で[Ctrl+,] -> "Format On Save"と検索してチェックを入れる。
 > 2. 続けて"Default Formatter"と検索して Prettier を選ぶ。
-> 3. [Ctrl+Shift+P]/[Command+Shift+P]->[Reload Window]を選択。
+> 3. [Ctrl+Shift+P] -> [Reload Window]を選択。
 
 ### 5. Git の認証情報を設定する
 
@@ -132,21 +132,17 @@ code ~
 
 [参考サイト](https://zenn.dev/sassan/articles/a1efb40422f2d7)
 
-> ターミナルを開き、下記の 2 つを実行する。  
-> ただし、ダブルクオーテーション内は自分で設定したいものにすること。  
-> なお、これらはコミットログに記録され、外部に公開される。  
-> どのようなものを設定すればいいかは参考サイトを参照。  
-> また、個人メールを外部に公開したくない場合も参考サイトを参照。
->
-> なお、ターミナルの開き方は[5.Python の環境構築をする](./5.Pythonの環境構築をする.md)等を参照。
-> もちろん WSL 上で実行する。
+> 以下の 2 つをターミナルで実行する。日本語の部分は書き換えること。  
+> **これらは外部に公開される。** それが嫌な場合は任意のメールと名前を設定してよい。  
+> メールに関しては GitHub 側が用意したダミーメールを使うこともできる。  
+> 詳しくは参考サイトを参照。
 >
 > ```shell
-> git config --global user.email "任意のメールアドレス"
+> git config --global user.email "GitHubアカウントのメールアドレス"
 > ```
 >
 > ```shell
-> git config --global user.name "任意の名前"
+> git config --global user.name "GitHubアカウントのID"
 > ```
 
 #### 3. GitHub CLI をインストールする
